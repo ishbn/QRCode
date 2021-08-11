@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 7MB  # 单个文件最大值
+      max-request-size: 14MB  # 总上传文件最大和值
+      enabled: true
+  thymeleaf:
+    servlet:
+      content-type: text/html
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    cache: false
+
+
